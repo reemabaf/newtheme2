@@ -1,9 +1,6 @@
 
 {
- "name": {
-    "ar": "لور",
-    "en": "LORE"
-  },
+  "name": "LORE",
   "version": "1.0.0",
   "type": "twilight",
   "author": "LORE Brand",
