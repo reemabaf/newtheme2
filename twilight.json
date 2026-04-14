@@ -1,14 +1,17 @@
 {
-  "version": "1.0.0",
-  "theme_name": "LORE",
-  "repo_url": "https://github.com/reemabaf/newtheme2",
-  "support_url": "https://salla.dev",
-  "settings": [],
+  "name": {
+    "ar": "LORE",
+    "en": "LORE"
+  },
+  "repository": "https://github.com/reemabaf/newtheme2",
+  "author_email": "reema.baf@gmail.com",
   "features": [
     "component-featured-products",
     "component-products-slider",
     "component-photos-slider",
-    "component-store-features"
+    "component-store-features",
+    "filters"
   ],
+  "settings": [],
   "components": []
 }
