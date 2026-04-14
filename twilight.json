@@ -1,0 +1,18 @@
+{
+  "name": {
+    "ar": "لور",
+    "en": "LORE"
+  },
+  "repository": "https://github.com/reemabaf/lore",
+  "author_email": "YOUR_REAL_EMAIL_HERE",
+  "features": [],
+  "settings": [
+    {
+      "type": "string",
+      "id": "placeholder",
+      "format": "hidden",
+      "value": "images/favicon.svg"
+    }
+  ],
+  "components": []
+}
