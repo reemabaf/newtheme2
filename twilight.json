@@ -1,14 +1,14 @@
 {
-  "name": "LORE",
   "version": "1.0.0",
-  "theme_type": "twilight",
-  "author": {
-    "name": "LORE Brand",
-    "email": "reema.baf@gmail.com"
-  },
-  "description": "A premium, fandom-inspired storefront theme for LORE — movie and TV show accessories.",
-  "screenshots": {
-    "large": ""
-  },
-  "settings": []
+  "theme_name": "LORE",
+  "repo_url": "https://github.com/reemabaf/newtheme2",
+  "support_url": "https://salla.dev",
+  "settings": [],
+  "features": [
+    "component-featured-products",
+    "component-products-slider",
+    "component-photos-slider",
+    "component-store-features"
+  ],
+  "components": []
 }
