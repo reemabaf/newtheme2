@@ -1,11 +1,14 @@
-
 {
   "name": "LORE",
   "version": "1.0.0",
-  "type": "twilight",
-  "author": "LORE Brand",
+  "theme_type": "twilight",
+  "author": {
+    "name": "LORE Brand",
+    "email": "hello@lorestore.com"
+  },
   "description": "A premium, fandom-inspired storefront theme for LORE — movie and TV show accessories.",
   "screenshots": {
     "large": ""
-  }
+  },
+  "settings": []
 }
