@@ -1,0 +1,262 @@
+{
+  "name": "LORE Theme",
+  "version": "1.0.0",
+  "description": "A premium, fandom-inspired storefront theme for LORE — movie and TV show accessories.",
+  "author": "LORE Brand",
+  "theme_type": "ecommerce",
+  "preview_url": "",
+  "documentation_url": "",
+
+  "settings": [
+    {
+      "id": "colors",
+      "label": "Brand Colors",
+      "fields": [
+        {
+          "id": "color_primary",
+          "type": "color",
+          "label": "Primary Color",
+          "default": "#3D1054",
+          "info": "Used for buttons, badges, and key highlights. Maps to --primary CSS variable."
+        },
+        {
+          "id": "color_background",
+          "type": "color",
+          "label": "Background Color",
+          "default": "#F5F0E8",
+          "info": "Main page background (cream/beige). Maps to --background CSS variable."
+        },
+        {
+          "id": "color_accent",
+          "type": "color",
+          "label": "Accent Color",
+          "default": "#C9B8D8",
+          "info": "Secondary highlight color (lavender). Maps to --accent CSS variable."
+        },
+        {
+          "id": "color_foreground",
+          "type": "color",
+          "label": "Text Color",
+          "default": "#1A0A2B",
+          "info": "Main body text color. Maps to --foreground CSS variable."
+        }
+      ]
+    },
+    {
+      "id": "typography",
+      "label": "Typography",
+      "fields": [
+        {
+          "id": "font_heading",
+          "type": "font",
+          "label": "Heading Font",
+          "default": "Playfair Display",
+          "info": "Used for section titles and product names."
+        },
+        {
+          "id": "font_body",
+          "type": "font",
+          "label": "Body Font",
+          "default": "Outfit",
+          "info": "Used for descriptions, labels, and UI text."
+        }
+      ]
+    },
+    {
+      "id": "layout",
+      "label": "Layout",
+      "fields": [
+        {
+          "id": "container_width",
+          "type": "select",
+          "label": "Container Width",
+          "default": "1280px",
+          "options": ["1024px", "1280px", "1440px"],
+          "info": "Maximum width of the content container."
+        },
+        {
+          "id": "border_radius",
+          "type": "range",
+          "label": "Card Border Radius",
+          "min": 0,
+          "max": 24,
+          "step": 2,
+          "default": 12,
+          "unit": "px",
+          "info": "Border radius applied to product cards and UI elements."
+        }
+      ]
+    },
+    {
+      "id": "hero",
+      "label": "Hero Section",
+      "fields": [
+        {
+          "id": "hero_tagline",
+          "type": "text",
+          "label": "Hero Tagline",
+          "default": "The Fall Collection",
+          "info": "Small label displayed above the hero headline."
+        },
+        {
+          "id": "hero_headline",
+          "type": "richtext",
+          "label": "Hero Headline",
+          "default": "Carry Your Stories With You",
+          "info": "Main hero heading. Supports basic HTML."
+        },
+        {
+          "id": "hero_subtext",
+          "type": "textarea",
+          "label": "Hero Subtext",
+          "default": "Premium accessories inspired by iconic pop culture. Elevated design meets the fandoms you love.",
+          "info": "Supporting text shown below the headline."
+        },
+        {
+          "id": "hero_cta_label",
+          "type": "text",
+          "label": "CTA Button Label",
+          "default": "Shop The Collection",
+          "info": "Primary call-to-action button text."
+        },
+        {
+          "id": "hero_image",
+          "type": "image",
+          "label": "Hero Background Image",
+          "default": "",
+          "info": "Full-screen hero background image. Recommended: 1920x1080px."
+        }
+      ]
+    },
+    {
+      "id": "best_sellers",
+      "label": "Best Sellers Section",
+      "fields": [
+        {
+          "id": "best_sellers_heading",
+          "type": "text",
+          "label": "Section Heading",
+          "default": "Iconic Best Sellers",
+          "info": "Heading displayed above the best sellers product grid."
+        },
+        {
+          "id": "best_sellers_subtext",
+          "type": "text",
+          "label": "Section Subtext",
+          "default": "The pieces everyone is talking about.",
+          "info": "Italic subtitle shown under the best sellers heading."
+        },
+        {
+          "id": "best_sellers_count",
+          "type": "range",
+          "label": "Number of Products",
+          "min": 2,
+          "max": 8,
+          "step": 1,
+          "default": 4,
+          "info": "How many best seller products to display."
+        }
+      ]
+    },
+    {
+      "id": "footer",
+      "label": "Footer",
+      "fields": [
+        {
+          "id": "footer_tagline",
+          "type": "textarea",
+          "label": "Footer Brand Tagline",
+          "default": "Elevated accessories inspired by the stories we love. Premium quality, curated designs.",
+          "info": "Brand tagline shown in the footer beside the logo."
+        },
+        {
+          "id": "footer_instagram",
+          "type": "url",
+          "label": "Instagram URL",
+          "default": "https://instagram.com/lorestore"
+        },
+        {
+          "id": "footer_twitter",
+          "type": "url",
+          "label": "Twitter / X URL",
+          "default": "https://twitter.com/lorestore"
+        },
+        {
+          "id": "newsletter_heading",
+          "type": "text",
+          "label": "Newsletter Heading",
+          "default": "The LORE Letter",
+          "info": "Newsletter section heading in the footer."
+        }
+      ]
+    }
+  ],
+
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero Banner",
+      "file": "src/sections/HeroSection.tsx",
+      "description": "Full-screen hero with headline, subtext, and CTA buttons."
+    },
+    {
+      "id": "featured_categories",
+      "name": "Featured Categories",
+      "file": "src/sections/FeaturedCategoriesSection.tsx",
+      "description": "Two-column category showcase (Phone Cases + Stickers)."
+    },
+    {
+      "id": "new_arrivals",
+      "name": "New Arrivals",
+      "file": "src/sections/NewArrivalsSection.tsx",
+      "description": "Product grid showing newest items."
+    },
+    {
+      "id": "brand_banner",
+      "name": "Brand Story Banner",
+      "file": "src/sections/BrandBannerSection.tsx",
+      "description": "Full-width quote block with brand story excerpt."
+    },
+    {
+      "id": "best_sellers",
+      "name": "Best Sellers",
+      "file": "src/sections/BestSellersSection.tsx",
+      "description": "Product grid for best selling items."
+    },
+    {
+      "id": "collections",
+      "name": "Collections",
+      "file": "src/sections/CollectionsSection.tsx",
+      "description": "Collection tag cloud / pills navigation."
+    }
+  ],
+
+  "layouts": [
+    {
+      "id": "default",
+      "name": "Default Layout",
+      "file": "src/layouts/DefaultLayout.tsx",
+      "description": "Base layout with sticky Navbar and Footer. Used by all pages."
+    }
+  ],
+
+  "templates": [
+    { "id": "home",    "name": "Home Page",       "route": "/" },
+    { "id": "shop",    "name": "Shop Page",        "route": "/shop" },
+    { "id": "product", "name": "Product Detail",   "route": "/product/:id" },
+    { "id": "collection", "name": "Collection",    "route": "/collections/:slug" },
+    { "id": "about",   "name": "About Brand",      "route": "/about" }
+  ],
+
+  "meta": {
+    "salla_version": ">=2.0.0",
+    "react_preview": true,
+    "notes": [
+      "This theme is built as a React/Vite preview for Salla.",
+      "All product data in src/data/products.ts maps to Salla product variables.",
+      "CSS custom properties in src/index.css map to the settings defined above.",
+      "Each file in src/sections/ corresponds to one Salla theme section.",
+      "Replace static data with Salla Liquid template variables when migrating."
+    ]
+  }
+}
