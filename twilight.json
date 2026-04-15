@@ -5,7 +5,13 @@
   },
   "repository": "https://github.com/reemabaf/newtheme2",
   "author_email": "hello@lorestore.com",
-  "features": [],
+  "features": [
+    "component-featured-products",
+    "component-products-slider",
+    "component-photos-slider",
+    "component-store-features",
+    "filters"
+  ],
   "settings": [],
   "components": []
 }
