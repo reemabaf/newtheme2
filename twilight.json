@@ -4,14 +4,8 @@
     "en": "LORE"
   },
   "repository": "https://github.com/reemabaf/newtheme2",
-  "author_email": "reema.baf@gmail.com",
-  "features": [
-    "component-featured-products",
-    "component-products-slider",
-    "component-photos-slider",
-    "component-store-features",
-    "filters"
-  ],
+  "author_email": "hello@lorestore.com",
+  "features": [],
   "settings": [],
   "components": []
 }
