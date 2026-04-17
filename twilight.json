@@ -6,19 +6,16 @@
   "repository": "https://github.com/reemabaf/newtheme2",
   "author_email": "hello@lorestore.com",
   "features": [
+    "filters",
     "component-featured-products",
-    "component-products-slider",
-    "component-photos-slider",
-    "component-store-features",
-    "filters"
+    "component-products-slider"
   ],
   "settings": [
     {
       "id": "header_is_sticky",
       "label": "Sticky Header",
       "type": "boolean",
-      "format": "switch",
-      "value": true
+      "format": "switch"
     }
   ],
   "components": [
@@ -26,14 +23,13 @@
       "key": "186b3f4f-25cf-4d3c-abca-cef7eed6f0ab",
       "title": "Hero Slider",
       "icon": "sicon-image",
-      "path": "home.enhanced-slider",
+      "path": "home.slider",
       "fields": [
         {
-          "id": "image",
+          "id": "title",
           "type": "string",
-          "format": "image",
-          "label": "Image",
-          "required": false
+          "format": "text",
+          "label": "Title"
         }
       ]
     }
