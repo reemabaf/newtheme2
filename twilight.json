@@ -6,40 +6,16 @@
   "repository": "https://github.com/reemabaf/newtheme2",
   "author_email": "hello@lorestore.com",
   "features": [
-    "mega-menu",
-    "fonts",
-    "color",
-    "breadcrumb",
-    "unite-cards-height",
     "component-featured-products",
-    "component-fixed-banner",
-    "component-fixed-products",
     "component-products-slider",
     "component-photos-slider",
-    "component-parallax-background",
-    "component-testimonials",
-    "component-square-photos",
     "component-store-features",
-    "component-youtube"
+    "filters"
   ],
   "settings": [
     {
       "id": "header_is_sticky",
-      "label": "Sticky main navigation on scroll",
-      "type": "boolean",
-      "format": "switch",
-      "value": true
-    },
-    {
-      "id": "footer_is_dark",
-      "label": "Dark mode footer",
-      "type": "boolean",
-      "format": "switch",
-      "value": false
-    },
-    {
-      "id": "show_tags",
-      "label": "Show product tags",
+      "label": "Sticky Header",
       "type": "boolean",
       "format": "switch",
       "value": true
@@ -49,16 +25,15 @@
     {
       "key": "186b3f4f-25cf-4d3c-abca-cef7eed6f0ab",
       "title": "Hero Slider",
-      "icon": "sicon-image-carousel",
-      "path": "home.slider",
+      "icon": "sicon-image",
+      "path": "home.enhanced-slider",
       "fields": [
         {
-          "id": "title",
+          "id": "image",
           "type": "string",
-          "format": "text",
-          "label": "Title",
-          "required": false,
-          "value": null
+          "format": "image",
+          "label": "Image",
+          "required": false
         }
       ]
     }
