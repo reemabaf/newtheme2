@@ -3,7 +3,7 @@
     "ar": "LORE",
     "en": "LORE"
   },
-  "repository": "https://github.com/reemabaf/newtheme2"
+  "repository": "https://github.com/reemabaf/newtheme2",
   "author_email": "hello@lorestore.com",
   "features": [
     "mega-menu",
@@ -24,214 +24,41 @@
   ],
   "settings": [
     {
-      "type": "boolean",
-      "icon": "sicon-toggle-off",
-      "label": "Vertical products mode",
-      "description": "",
-      "id": "vertical_fixed_products",
-      "format": "switch",
-      "required": false,
-      "value": false,
-      "selected": false
-    },
-    {
-      "type": "boolean",
-      "id": "is_more_button_enabled",
-      "label": "Show (View All) button on homepage",
-      "format": "switch"
-    },
-    {
-      "type": "static",
-      "id": "static-line1",
-      "format": "line"
-    },
-    {
-      "type": "static",
-      "format": "title",
-      "id": "static-label2",
-      "value": "Header Options",
-      "variant": "h6"
-    },
-    {
       "id": "header_is_sticky",
       "label": "Sticky main navigation on scroll",
-      "description": "",
       "type": "boolean",
-      "icon": "sicon-toggle-off",
       "format": "switch",
-      "required": false,
-      "value": true,
-      "selected": true
+      "value": true
     },
     {
-      "type": "boolean",
-      "icon": "sicon-toggle-off",
-      "label": "Dark top bar",
-      "description": "",
-      "id": "topnav_is_dark",
-      "format": "switch",
-      "required": false,
-      "value": true,
-      "selected": false
-    },
-    {
-      "type": "boolean",
-      "icon": "sicon-toggle-off",
-      "label": "Show important page links in top bar",
-      "description": "",
-      "id": "important_links",
-      "format": "switch",
-      "required": false,
-      "value": true,
-      "selected": true
-    },
-    {
-      "type": "static",
-      "id": "static-line3",
-      "format": "line"
-    },
-    {
-      "type": "static",
-      "format": "title",
-      "id": "static-label4",
-      "value": "Footer Options",
-      "variant": "h6"
-    },
-    {
-      "type": "boolean",
-      "icon": "sicon-toggle-off",
-      "label": "Dark mode footer",
-      "description": "",
       "id": "footer_is_dark",
-      "format": "switch",
-      "required": false,
-      "value": true,
-      "selected": false
-    },
-    {
-      "type": "static",
-      "id": "static-line5",
-      "format": "line"
-    },
-    {
-      "type": "static",
-      "format": "title",
-      "id": "static-label6",
-      "value": "Product Page Options",
-      "variant": "h6"
-    },
-    {
+      "label": "Dark mode footer",
       "type": "boolean",
-      "icon": "sicon-toggle-off",
-      "label": "Sticky add to cart button on mobile",
-      "description": "",
-      "id": "sticky_add_to_cart",
       "format": "switch",
-      "required": false,
-      "value": true,
-      "selected": true
+      "value": false
     },
     {
-      "type": "boolean",
-      "icon": "sicon-toggle-off",
-      "label": "Show product tags",
-      "description": "",
       "id": "show_tags",
+      "label": "Show product tags",
+      "type": "boolean",
       "format": "switch",
-      "required": false,
-      "value": true,
-      "selected": true
-    },
-    {
-      "id": "slider_background_size",
-      "type": "items",
-      "format": "dropdown-list",
-      "label": "Product image display mode",
-      "description": "",
-      "labelHTML": null,
-      "icon": "sicon-list",
-      "selected": [
-        {
-          "label": "Contain (show full image centered)",
-          "value": "contain",
-          "key": "f4adec13-6e4c-433b-b141-b2807935ced9"
-        }
-      ],
-      "options": [
-        {
-          "label": "Cover (fill space, preserve ratio)",
-          "value": "cover",
-          "key": "e9c8ea8f-c5c6-438e-9d45-3bce269afde4"
-        },
-        {
-          "label": "Contain (show full image centered)",
-          "value": "contain",
-          "key": "f4adec13-6e4c-433b-b141-b2807935ced9"
-        }
-      ],
-      "source": "Manual",
-      "required": true
+      "value": true
     }
   ],
   "components": [
     {
       "key": "186b3f4f-25cf-4d3c-abca-cef7eed6f0ab",
-      "title": "Animated Images Slider",
+      "title": "Hero Slider",
       "icon": "sicon-image-carousel",
-      "path": "home.enhanced-slider",
+      "path": "home.slider",
       "fields": [
         {
-          "id": "slides",
-          "type": "collection",
-          "format": "collection",
-          "required": true,
-          "minLength": 1,
-          "maxLength": 10,
-          "label": "",
-          "item_label": "Slide",
-          "value": [],
-          "fields": [
-            {
-              "type": "string",
-              "icon": "sicon-image",
-              "value": null,
-              "id": "slides.image",
-              "label": "Banner Image",
-              "format": "image",
-              "required": true,
-              "placeholder": "",
-              "description": "* Recommended size: 900x600 px"
-            },
-            {
-              "type": "string",
-              "icon": "sicon-format-text-alt",
-              "label": "Main Title",
-              "multilanguage": true,
-              "id": "slides.title",
-              "value": null,
-              "required": false,
-              "format": "text",
-              "description": "",
-              "placeholder": "Add a title here...",
-              "hide": false,
-              "minLength": 0,
-              "maxLength": 100
-            },
-            {
-              "type": "string",
-              "icon": "sicon-typography",
-              "label": "Description",
-              "multilanguage": true,
-              "id": "slides.description",
-              "value": null,
-              "description": "",
-              "format": "textarea",
-              "required": false,
-              "placeholder": "Add additional details here",
-              "minLength": 0,
-              "maxLength": 255
-            }
-          ]
+          "id": "title",
+          "type": "string",
+          "format": "text",
+          "label": "Title",
+          "required": false,
+          "value": null
         }
       ]
     }
